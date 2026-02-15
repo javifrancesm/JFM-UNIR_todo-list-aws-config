@@ -1,12 +1,12 @@
 version = 0.1
 
-[staging]
-[staging.deploy]
-[staging.deploy.parameters]
-stack_name = "staging-todo-list-aws"
+[production]
+[production.deploy]
+[production.deploy.parameters]
+stack_name = "production-todo-list-aws"
 s3_bucket = "sam-artifacts-cp14-jfm-unir-2026"
-s3_prefix = "staging-todo-list-aws"
+s3_prefix = "production-todo-list-aws"
 region = "us-east-1"
 capabilities = "CAPABILITY_IAM"
-parameter_overrides = "Stage=\"staging\""
+parameter_overrides = "Stage=\"production\""
 image_repositories = []
